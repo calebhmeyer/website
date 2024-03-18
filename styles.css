@@ -1,0 +1,58 @@
+/* Add universal styles here */
+body, html {
+    height: 100%; /* Ensure the gradient covers the entire page */
+    margin: 0;
+    overflow: auto; /* Allow content to scroll */
+    background: linear-gradient(
+        to bottom,
+        black 0%,
+        #00008B 25%, /* Dark blue starts transitioning early */
+        #007FFF 100% /* Adjusted hue closer to between cyan and blue */
+    );
+    background-attachment: fixed; /* Make background stationary */
+}
+
+
+
+#particle-canvas {
+    position: absolute; /* or fixed, depending on your layout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Adjust this to be behind the buttons but above the background */
+    opacity: 1.0; /* Adjust transparency as needed */
+}
+}
+/* Optionally, ensure the canvas inside fills the container */
+#particle-canvas canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* Other styles as needed... */
+/* Menu container style */
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+/* Ensure menu buttons are clickable by providing a higher z-index */
+.menu, .menu-button {
+    z-index: 10; /* Higher than the particle canvas */
+    position: relative; /* Needed to make z-index effective */
+}c
+/* Menu button style */
+.menu-button {
+    background-color: #ff0000; /* Corrected color property */
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #ff0000; /* Replace with hover color */
+}
