@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivise LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="particle-canvas"></div>
+
+    <div class="menu">
+        <a href="AboutUs.html"><button class="menu-button">About Us</button></a>
+        <a href="EventServices.html"><button class="menu-button">Event Services</button></a>
+        <a href="DevelopmentServices.html"><button class="menu-button">Development Services</button></a>
+        <a href="SocialMediaLinks.html"><button class="menu-button">Social Media Links</button></a>
+        <a href="Downloads.html"><button class="menu-button">Downloads</button></a>
+        <!-- New Button for UE Fixture Library -->
+        <a href="UEFixtureLibrary.html"><button class="menu-button">UE Fixture Library</button></a>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeParticles();
+            // No need to call loadMenu here, as it's called in main.js
+        });
+    </script>
+</body>
+</html>
