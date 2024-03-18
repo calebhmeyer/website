@@ -78,7 +78,7 @@ function initializeParticles() {
             },
             modes: {
                 grab: {
-                    distance: 400,
+                    distance: 100,
                     line_linked: {
                         opacity: 1
                     }
