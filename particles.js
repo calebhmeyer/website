@@ -91,8 +91,10 @@ function initializeParticles() {
                     speed: 3
                 },
                 repulse: {
-                    distance: 200
+                    distance: 200, // Consider increasing distance for stronger initial repulsion
+                    duration: 0.4, // Adjust duration for the repulsion effect (not in standard particles.js API)
                 },
+
                 push: {
                     particles_nb: 4
                 },
